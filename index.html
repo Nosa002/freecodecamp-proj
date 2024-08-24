@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form.freecodecamp.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title">
+    <h1>freeCodeCamp Survey Form</h1>
+    </div>
+
+    <div id="description">
+    <p>Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <form id="survey-form">
+        <fieldset>
+            <div>
+            <label for="full-name">Name
+                <input id="full-name" type="text" required name="full-name" placeholder="Enter your name" value="name">
+            </label>
+            </div>
+            <div>
+            <label for="email">Email
+                <input id="email" type="email" name="email" required placeholder="Enter your email" value="email">
+            </label>
+            </div>
+            <div>
+            <label for="age">Age
+                <input id="age" type="number" name="age" min="10" max="99" placeholder="Age" value="age" required>
+            </label>
+            </div>
+            <div>
+            <label for="dropdown">Favourite Food
+                <select name="dropdown" id="dropdown" required>
+                    <option disabled selected value="">(Select one)</option>
+                    <option value="1">Jollof Rice</option>
+                    <option value="2">Spaghatti</option>
+                    <option value="3">Banga Soup and Starch</option>
+                </select>
+            </label>
+            </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Are you a football fan?</legend>
+                <div>
+                <input type="radio" id="yes" name="football" value="yes" checked required>
+                <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="football" value="no" checked required>
+                    <label for="no">No</label>
+                </div>
+                <div>
+                    <p>What are your Favourite Video Games?</p>
+                    <div>
+                    <input type="checkbox" id="Fc24" name="Video-Games" checked value="games">
+                    <label for="Fc24">Fc24</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Mortal-Kombat" name="Video-Games" value="games>
+                        <label for="Mortal-Kombat">Mortal Kombat</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Video-Games" id="GTA" value="games>
+                        <label for="GTA">Grand Theft Auto 6</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Video-Games" id="god-of-war" value="games>
+                        <label for="god-of-war">god of war</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Video-Games" id="call-of-duty" value="games>
+                        <label for="call-of-duty">Call of Duty</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                <p class="comments">Tell us something about yourself:</p>
+                <textarea id="about" name="about" rows="5" cols="50" placeholder="Write something about you..."></textarea>
+                </div>
+                </fieldset>
+                <button id="submit">Submit</button>
+    </form>
+
+</body>
+</html>
